@@ -1,0 +1,16 @@
+{
+    "materias": [
+        {
+            "id": "1",
+            "nome": "Teste",
+            "pontos": "100",
+            "media": "60"
+        },
+        {
+            "id": "2",
+            "nome": "Teste1",
+            "pontos": "100",
+            "media": "70"
+        }
+    ]
+}

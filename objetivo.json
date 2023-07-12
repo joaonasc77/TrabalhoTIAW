@@ -1,0 +1,14 @@
+{
+    "objetivos": [
+        {
+            "id": "1",
+            "nome": "Teste",
+            "rotinaId": "1"
+        },
+        {
+            "id": "2",
+            "nome": "Teste1",
+            "rotinaId": "1"
+        }
+    ]
+}

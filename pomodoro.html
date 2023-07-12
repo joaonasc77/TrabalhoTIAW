@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../css/pomodoro.css" type="text/css" media="screen">
+    <title>Pomodoro</title>
+</head>
+
+<body>
+    <header>
+        <div class="page">
+            <div class="toolbar">
+                <div class="toolbarItens">
+                    <span>Pomodoro</span>
+                    <div class="areaToolbar">
+                        <button onclick="window.location.href = '#modalConfig'">
+                            <img src="../assets/configImg.png">
+                        </button>
+                        <button onclick="window.location.href = '../html/estudantil.html'">
+                            <img src="../assets/BackImg.png">
+                        </button>
+                        <button onclick="window.location.href = '../html/index.html'">
+                            <img src="../assets/home.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="MomentoConcentração">
+        <div class="container" style="position: relative; top: 50px;">
+            <div class="areaSuperior" style="align-items: center;">
+                <div>
+                    <button id="startButton" class="botaoAcaoTimer" onclick="iniciarTimer()">
+                        <img id="startImage" src="../assets/Start.png" alt="">
+                    </button>
+                </div>
+                <div>
+                    <div id="timerEstudo" class="timer1">
+                        <span id="minutos">00</span>:<span id="segundos">00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div id="baixoParte" class="parteBaixo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalConfig" class="modal">
+        <div class="content">
+          <h1>Configuração de Pomodoro</h1>
+       
+          <div class="areaInput" style="margin-left: 30px;">
+            <span>Tempo de Concentração</span>
+            <input type="number" id="concentracao" min="1">
+          </div>
+          <div class="areaInput" style="margin-left: 30px;">
+            <span>Tempo de Descanso</span>
+            <input type="number" id="descanso" min="1">
+          </div>
+          <div class="botoesCRUD" style="margin-top: 20px;">
+            <button class="btnSalvar" onclick="salvar()">
+                Salvar
+            </button>
+
+            <button class="btnCancelar" onclick="window.location.href = '#'">
+                Cancelar
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="../src/pomodoro.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../css/estudantil.css" type="text/css" media="screen">
+    <script defer type="text/javascript" src="../src/estudantil.js"></script>
+    <title>Routine Organizer</title>
+</head>
+<body>
+    <div class="page"> 
+        <div class="toolbar">
+            <div class="toolbarItens">
+                <span>Routine Organizer</span>
+                <button onclick="window.location.href = '../html/index.html'">
+                    <img src="../assets/home.svg">
+                </button>
+            </div>
+        </div>
+
+        <div id="classeBody" class="body">
+            <div class="areaBotoes">
+                <button onclick="window.location.href = '#modalMateria'">
+                    <span>Criar Matéria</span>
+                </button>
+
+                <button onclick="window.location.href = '../html/pomodoro.html'">
+                    <span>Pomodoro</span>
+                </button>
+            </div>
+
+            <div id="listaMateriasDiv" class="listaMaterias">
+            </div>
+        </div>
+
+        <div id="modalMateria" class="modal">
+            <div class="content">
+              <h1>Criar Matéria</h1>
+           
+              <div class="areaInput" style="margin-left: 30px;">
+                <span>Nome</span>
+                <input type="text" id="nome">
+              </div>
+
+              <div class="areaPontosMedia">
+                <div class="areaInput">
+                    <span>Pontos Total</span>
+                    <input type="number" id="pontos">
+                </div>
+
+                <div class="areaInput">
+                    <span>Média %</span>
+                    <input type="number" id="media">
+                </div>
+              </div>
+              
+              <div class="botoesCRUD" style="margin-top: 10px;">
+                <button class="btnSalvar" onclick="salvar()">
+                    Salvar
+                </button>
+
+                <button class="btnCancelar" onclick="window.location.href = '#'">
+                    Cancelar
+                </button>
+              </div>
+            </div>
+        </div>
+
+        <div id="modalTarefa" class="modal">
+            <div class="content">
+              <h1>Criar Tarefa</h1>
+           
+              <div class="areaInput" style="margin-left: 30px;">
+                <span>Nome</span>
+                <input type="text" id="nomeTarefa">
+              </div>
+
+              <div class="areaPontosMedia">
+                <div class="areaInput">
+                    <span>Pontos Total</span>
+                    <input type="number" id="pontosTotal">
+                </div>
+
+                <div class="areaInput">
+                    <span>Nota</span>
+                    <input type="number" id="nota">
+                </div>
+              </div>
+              
+              <div class="botoesCRUD" style="margin-top: 10px;">
+                <button class="btnSalvar" onclick="salvarTarefa()">
+                    Salvar
+                </button>
+
+                <button class="btnCancelar" onclick="window.location.href = '#'">
+                    Cancelar
+                </button>
+              </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

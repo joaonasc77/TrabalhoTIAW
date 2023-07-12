@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="../css/index.css" type="text/css" media="screen">
+  <script defer type="text/javascript" src="../src/index.js"></script>
+  <title>Routine Organizer</title>
+</head>
+
+<body>
+  <div class="toolbar">
+    <div class="toolbarItens">
+      <span>Routine Organizer</span>
+      <button onclick="window.location.href = '../html/estudantil.html'">
+        <img src="../assets/icon livro.png">
+      </button>
+    </div>
+  </div>
+  
+  <div style="display: flex; flex-direction: row; justify-content: space-between; padding-top: 20px; padding-left: 10px; padding-right: 10px; background-color: #e4e4e4">
+    <div class="rectangle" id="semana-1">
+      <div style="display: flex; justify-content: center; margin-top: 10px; border-bottom: 1px solid black;">
+        <span style="font-weight: 600; font-size: 15px;">Domingo</span>
+      </div>
+      
+      
+      
+      <button class="button" onclick="buttonClicked('1')">+</button>
+    </div>
+    
+    <div class="rectangle" id="semana-2">
+      <div style="display: flex; justify-content: center; margin-top: 10px; border-bottom: 1px solid black;">
+        <span style="font-weight: 600; font-size: 15px;">Segunda-Feira</span>
+      </div>
+      
+      
+      
+      <button class="button" onclick="buttonClicked('2')">+</button>
+    </div>
+    <div class="rectangle" id="semana-3">
+      <div style="display: flex; justify-content: center; margin-top: 10px; border-bottom: 1px solid black;">
+        <span style="font-weight: 600; font-size: 15px;">Terça-Feira</span>
+      </div>
+      
+      
+      
+      <button class="button" onclick="buttonClicked('3')">+</button>
+    </div>
+    <div class="rectangle" id="semana-4">
+      <div style="display: flex; justify-content: center; margin-top: 10px; border-bottom: 1px solid black;">
+        <span style="font-weight: 600; font-size: 15px;">Quarta-Feira</span>
+      </div>
+      
+      
+      
+      <button class="button" onclick="buttonClicked('4')">+</button>
+    </div>
+    <div class="rectangle" id="semana-5">
+      <div style="display: flex; justify-content: center; margin-top: 10px; border-bottom: 1px solid black;">
+        <span style="font-weight: 600; font-size: 15px;">Quinta-Feira</span>
+      </div>
+      
+      
+      
+      <button class="button" onclick="buttonClicked('5')">+</button>
+    </div>
+    <div class="rectangle" id="semana-6">
+      <div style="display: flex; justify-content: center; margin-top: 10px; border-bottom: 1px solid black;">
+        <span style="font-weight: 600; font-size: 15px;">Sexta-Feira</span>
+      </div>
+      
+      
+      
+      <button class="button" onclick="buttonClicked('6')">+</button>
+    </div>
+    <div class="rectangle" id="semana-7">
+      <div style="display: flex; justify-content: center; margin-top: 10px; border-bottom: 1px solid black;">
+        <span style="font-weight: 600; font-size: 15px;">Sábado</span>
+      </div>
+      
+      
+      
+      <button class="button" onclick="buttonClicked('7')">+</button>
+    </div>
+  </div>
+
+  <div id="modalVisualizacao" class="modal">
+    <div class="contentVisualizacao" id="visualizacaoContent">
+      <div class="areaTitulo" id="tituloArea">
+        <button class="btnFechar" onclick="window.location.href = '#'">
+          X
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalRotina" class="modal">
+    <div class="content">
+      <h1>Criar Rotina</h1>
+
+      <div class="areaInput" style="margin-left: 0px;">
+        <span>Nome da Rotina</span>
+        <input id="nome">
+      </div><br>
+  
+      <div class="areaInput" style="margin-left: 0px; margin-top: 30px;">
+        <span>Data</span>
+        <input type="date" id="data">
+      </div><br>
+
+      <div class="botoesCRUD" style="margin-top: 10px; margin-top: 30px;">
+        <button class="btnSalvar" onclick="salvarRotina()">
+            Salvar
+        </button>
+
+        <button class="btnCancelar" onclick="window.location.href = '#'">
+            Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

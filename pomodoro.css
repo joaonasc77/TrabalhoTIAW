@@ -1,0 +1,90 @@
+.MomentoConcentreção{    
+}
+
+.timer1{
+    font-size: 100px;
+}
+
+.timer2{
+    font-size: 100px;
+}
+
+.areaToolbar{
+    display:flex ;
+    flex-direction: row;
+}
+
+.areaToolbar button{
+    margin-left: 5px;
+}
+
+.areaInput input{
+    width: 80px;
+}
+
+.modal .content {
+    width: 392px !important;
+    height: 351px !important;
+}
+
+.botaoAcaoTimer {
+    width: 80px;
+    height: 80px;
+}
+
+.botaoAcaoTimer img {
+    width: 80px;
+}
+
+.areaVermelho {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    height: 221px;
+    border-radius: 20px;
+    background-color: #A10000;
+    justify-content: center;
+    align-items: center;
+}
+
+.areaVermelho span, .areaVerde span {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.areaVerde {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    height: 221px;
+    border-radius: 20px;
+    background-color: #006A0B;
+    justify-content: center;
+    align-items: center;
+}
+
+.areaInput {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.botoesCRUD {
+    position: relative;
+    top: 20px;
+}
+
+.areaSuperior {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.areaSuperior div {
+    margin-left: 20px;
+}
